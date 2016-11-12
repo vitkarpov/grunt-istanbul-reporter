@@ -24,7 +24,8 @@ module.exports = function(grunt) {
     this.originalWorkingDirectory = process.cwd();
     this.reporter = Report.create(this.options.reporter, {
       dir: path.resolve(this.options.exportDir),
-      root: path.resolve(this.options.exportDir)
+      root: path.resolve(this.options.exportDir),
+      file: this.options.file
     });
   };
 
